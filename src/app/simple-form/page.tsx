@@ -1,11 +1,10 @@
 import styles from "./page.module.css";
-import Link from "next/link";
+import TestForm from "@/app/simple-form/test-form/test-form";
 
 export default async function Home() {
   return (
     <div className={styles.page}>
-      <h1>Home</h1>
-      <Link href="/simple-form">Простая форма</Link>
+      <TestForm />
     </div>
   );
 }
